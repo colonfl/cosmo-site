@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmo — Powering Humanity’s Dreams</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 0 5%;
+      background-size: cover;
+      background-position: center;
+      text-align: left;
+    }
+    h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin: 0 0 1rem 0;
+    }
+    p {
+      font-size: 1.5rem;
+      max-width: 600px;
+      line-height: 1.5;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid #fff;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #fff;
+      color: #000;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #aaa;
+      background: #000;
+    }
+
+#logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  z-index: 1000;
+  transition: opacity 0.4s ease;
+}
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+  </style>
+</head>
+<body>
+	<div id="logo">Cosmo</div>
+  <!-- Section 1: Hero -->
+  <section style="background-image: url('dream_cleanup.png');">
+    <h1>POWERING<br>HUMANITY’S DREAMS</h1>
+    <p>Cosmo was founded under the belief that a future where humanity is free to chase its dreams is far more inspiring than one where we are not.</p>
+    <a href="Cosmopaper1.pdf" class="btn" target="_blank">READ WHITE PAPER</a>
+  </section>
+
+  <!-- Section 2: Product -->
+  <section style="background-image: url('fusion_control.png');">
+    <h1>REVOLUTIONIZING ENERGY<br>INFRASTRUCTURE</h1>
+    <p>Cosmo’s Neutrino platform is a real-time monitoring system designed to enable trust in tritium, fusion’s rare fuel, allowing reactors to scale safely and unlock abundant energy for humanity.</p>
+  </section>
+
+  <!-- Section 3: How -->
+  <section style="background-image: url('solarpunk.png');">
+    <h1>DREAMS ARE THE ANTIDOTE</h1>
+    <p>The path of chasing a dream is not easy — it tests, breaks, and rebuilds us. But it is through that struggle that we find meaning. Every step forward, no matter how small, replaces despair with direction.<br>
+
+When people chase their dreams, they become living proof that hope is possible. That energy spreads — inspiring families, communities, and eventually civilizations.<br>
+
+Cosmo believes this ripple effect is how humanity heals, grows, and rises together. By enabling abundance through fusion, we ensure every person has the freedom to dream — and the power to pursue it.</p>
+  </section>
+
+  <!-- Section 4: Vision -->
+  <section style="background-image: url('solarpunk.png');">
+    <h1>BUILDING A POST-SCARCITY<br>CIVILIZATION</h1>
+    <p>By securing the foundation of fusion, Cosmo is helping open the door to an abundant future — a solarpunk Earth where energy flows freely, communities thrive, and humanity rises together to explore the cosmos.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Cosmo, Inc. All rights reserved.</p>
+  </footer>
+
+<script>
+  const logo = document.getElementById('logo');
+  function toggleLogo() {
+    if (window.scrollY > 0) {
+      logo.classList.add('hidden');
+    } else {
+      logo.classList.remove('hidden');
+    }
+  }
+  window.addEventListener('scroll', toggleLogo);
+  window.addEventListener('load', toggleLogo);
+</script>
+
+</body>
+</html>
